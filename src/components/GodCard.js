@@ -1,6 +1,11 @@
 import React from "react";
 
-function GodCard() {
-  return <div></div>;
+function GodCard({ god }) {
+  return (
+    <div>
+      <p>{god.name}</p>
+      <p>God Name</p>
+    </div>
+  );
 }
 export default GodCard;

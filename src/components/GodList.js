@@ -1,10 +1,11 @@
 import React from "react";
+import GodCard from "./GodCard";
 
-function GodList() {
+function GodList({ gods }) {
+  const renderGods = gods.map((god) => <GodCard god={god} key={god.id} />);
   return (
     <div>
-      <h1>GodCard</h1>
-      <GodCard />
+      <ul className="cards">{renderGods}</ul>;
     </div>
   );
 }
