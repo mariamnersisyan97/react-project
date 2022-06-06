@@ -3,6 +3,7 @@ import About from "./About";
 import Navbar from "./Navbar";
 import Form from "./Form";
 import Home from "./Home";
+import GodList from "./GodList";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -10,9 +11,9 @@ function App() {
     <div>
       <Navbar />
       <Routes>
-        <Route exact path="/about" component={About} />
-        <Route exact path="addGod" component={Form} />
-        <Route exact path="home" component={Home} />
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/about" element={<About />} />
+        <Route exact path="/addGod" element={<Form />} />
       </Routes>
     </div>
   );
