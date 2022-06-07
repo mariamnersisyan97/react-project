@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
 function GodCard({ god }) {
   const { name, power, symbol, father, mother, url } = god;
+  const [count, setCount] = useState(0);
+
+  const incrementLikes = () => {
+    let newCount = count + 1;
+    setCount(newCount);
+  };
+
   return (
     <li className="god-card">
       <h4>{god.name}</h4>
@@ -13,6 +20,7 @@ function GodCard({ god }) {
         <br />
         Father: {father}
       </p>
+      <button onClick={incrementLikes}>❤️ Likes: {count}</button>
     </li>
   );
 }
