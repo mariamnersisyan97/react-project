@@ -2,22 +2,28 @@ import React, { useState } from "react";
 
 const baseURL = `http://localhost:3004/gods/`;
 
-const newGod = {
-  name: "",
-  power: "",
-  url: "",
-  likes: 0,
-};
+// const newGod = {
+//   name: "",
+//   power: "",
+//   url: "",
+//   likes: 0,
+// };
 
-function Form({ setGods }) {
-  const [addGod, setAddGod] = useState(newGod);
+function Form({ gods, setGods }) {
+  const [god, setGod] = useState({
+    name: "",
+    power: "",
+    url: "",
+    likes: 0,
+  });
+
   const handleChange = (e) => {
     console.log(e.target.value);
-    setAddGod((updatedGodsList) => ({
-      ...updatedGodsList,
+    setGod((god) => ({
+      ...god,
       [e.target.name]: e.target.value,
     }));
-    console.log(addGod);
+    console.log(god);
   };
 
   const handleSubmit = (e) => {
@@ -27,31 +33,36 @@ function Form({ setGods }) {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(newGod),
+      body: JSON.stringify(god),
     })
       .then((response) => response.json())
-      .then((data) => setAddGod((currentGods) => [...currentGods, data]));
+      .then((data) => {
+        const newGods = [...gods, data];
+        setGods(newGods);
+      })
+      //  setGod((gods) => [...gods, data]))
+      .catch((error) => console.error("Unable to get gods.", error));
   };
   return (
     <div className="new-god-form">
       <h2> New God</h2>
       <form onSubmit={handleSubmit}>
         <input
-          value={newGod.name}
+          value={god.name}
           type="text"
           name="name"
           placeholder="God Name"
           onChange={handleChange}
         />
         <input
-          value={newGod.power}
+          value={god.power}
           type="text"
           name="power"
           placeholder="Power"
           onChange={handleChange}
         />
         <input
-          value={newGod.url}
+          value={god.url}
           type="text"
           name="url"
           placeholder="Image URL"
