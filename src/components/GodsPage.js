@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import GodList from "./GodList";
+
+import GodCard from "./GodCard";
 import Form from "./Form";
 
 function GodsPage() {
@@ -11,12 +12,12 @@ function GodsPage() {
       .then((r) => r.json())
       .then(setGods);
   }, []);
-
+  const renderGods = gods.map((god) => <GodCard god={god} key={god.id} />);
   //move gods up
   return (
     <div>
       <Form gods={gods} setGods={setGods} />
-      <GodList gods={gods} />
+      <ul className="cards">{renderGods}</ul>
     </div>
   );
 }
