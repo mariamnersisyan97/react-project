@@ -21,6 +21,7 @@ function GodCard({ god }) {
         Father: {father}
       </p>
       <button onClick={incrementLikes}>❤️ Likes: {count}</button>
+      <button> 🗑️ </button>
     </li>
   );
 }

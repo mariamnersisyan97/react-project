@@ -2,13 +2,6 @@ import React, { useState } from "react";
 
 const baseURL = `http://localhost:3004/gods/`;
 
-// const newGod = {
-//   name: "",
-//   power: "",
-//   url: "",
-//   likes: 0,
-// };
-
 function Form({ gods, setGods }) {
   const [god, setGod] = useState({
     name: "",

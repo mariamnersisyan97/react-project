@@ -11,6 +11,7 @@ function GodsPage() {
       .then((r) => r.json())
       .then(setGods);
   }, []);
+
   //move gods up
   return (
     <div>
