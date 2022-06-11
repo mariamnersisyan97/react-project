@@ -3,13 +3,29 @@ import GodCard from "./GodCard";
 import Form from "./Form";
 import Search from "./Search";
 
-function GodsPage({ gods, setGods, handleSearch, search }) {
-  const handleDelete = () => {
-    console.log("deleted");
-  };
+function GodsPage({
+  gods,
+  setGods,
+  handleSearch,
+  search,
+  handleDeleteListing,
+  baseURL,
+}) {
+  function handleDeleteListing(id) {
+    const updatedGodsArray = gods.filter((god) => god.id !== id);
+    setGods(updatedGodsArray);
+    console.log("delete");
+    const deleteMethod = {
+      method: "DELETE",
+    };
+    fetch(baseURL + `/${id}`, deleteMethod);
+
+    // excludes only the one with the id we are passing in from returned array
+  }
   const renderGods = gods.map((god) => (
-    <GodCard handleDelete={handleDelete} god={god} key={god.id} />
+    <GodCard handleDeleteListing={handleDeleteListing} god={god} key={god.id} />
   ));
+
   //move gods up
 
   return (

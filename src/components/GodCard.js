@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function GodCard({ god, handleDelete }) {
+function GodCard({ god, handleDeleteListing }) {
   const { name, power, symbol, father, mother, url, likes } = god;
   const [count, setCount] = useState(likes);
 
@@ -24,7 +24,7 @@ function GodCard({ god, handleDelete }) {
         ❤️ Likes:
         {count}
       </button>
-      <button onClick={handleDelete}> 🗑️ </button>
+      <button onClick={handleDeleteListing}> 🗑️ </button>
     </li>
   );
 }
