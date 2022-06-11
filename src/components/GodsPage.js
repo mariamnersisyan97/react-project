@@ -4,21 +4,6 @@ import Form from "./Form";
 import Search from "./Search";
 
 function GodsPage({ gods, setGods, handleSearch, search }) {
-  // const baseURL = ` http://localhost:3004/gods`;
-  // const [gods, setGods] = useState([]);
-
-  // const [search, setSearch] = useState("");
-  // function handleSearch(newSearch) {
-  //   setSearch(newSearch);
-  //   console.log("1");
-  // }
-
-  // useEffect(() => {
-  //   fetch(baseURL)
-  //     .then((r) => r.json())
-  //     .then(setGods);
-  // }, []);
-
   const handleDelete = () => {
     console.log("deleted");
   };

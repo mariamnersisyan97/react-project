@@ -8,7 +8,8 @@
       "father": "Zeus",
       "mother": "Dione",
       "url": "https://greektraveltellers.com/images/Blog/Greek%20Gods/Greek-Goddess-Aphrodite.jpg",
-      "id": 1
+      "id": 1,
+      "likes": 5
     },
     {
       "name": "Apollo",
@@ -18,7 +19,8 @@
       "father": "Zeus",
       "mother": "Leto",
       "url": "https://greektraveltellers.com/images/Blog/Greek%20Gods/Greek-God-Apollo.jpg",
-      "id": 2
+      "id": 2,
+      "likes": 16
     },
     {
       "name": "Ares",
@@ -28,7 +30,8 @@
       "father": "Zeus",
       "mother": "Hera",
       "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/The_Combat_of_Ares_and_Athena.jpg/625px-The_Combat_of_Ares_and_Athena.jpg",
-      "id": 3
+      "id": 3,
+      "likes": 24
     },
     {
       "name": "Artemis",
@@ -38,7 +41,8 @@
       "father": "Zeus",
       "mother": "Leto",
       "url": "https://greektraveltellers.com/images/Blog/Greek%20Gods/Greek-Goddess-Artemis.jpg",
-      "id": 4
+      "id": 4,
+      "likes": 0
     },
     {
       "name": "Athena",
@@ -48,7 +52,8 @@
       "father": "Zeus",
       "mother": "Metis",
       "url": "https://greektraveltellers.com/images/Blog/Greek%20Gods/Greek-Goddess-Athena.jpg",
-      "id": 5
+      "id": 5,
+      "likes": 34
     },
     {
       "name": "Demeter",
@@ -58,7 +63,8 @@
       "father": "Cronus",
       "mother": "Rhea",
       "url": "https://greektraveltellers.com/images/Blog/Greek%20Gods/Greek-Goddess-Demeter.jpg",
-      "id": 6
+      "id": 6,
+      "likes": 2
     },
     {
       "name": "Dionysus",
@@ -68,7 +74,8 @@
       "father": "Zeus",
       "mother": "Semele",
       "url": "https://www.gods-and-monsters.com/images/greek-mythology-dionysus.jpeg",
-      "id": 7
+      "id": 7,
+      "likes": 8
     },
     {
       "name": "Hephaestus",
@@ -78,7 +85,8 @@
       "father": "None",
       "mother": "Hera",
       "url": "https://greektraveltellers.com/images/Blog/Greek%20Gods/Greek-God-Hephaestus.jpg",
-      "id": 8
+      "id": 8,
+      "likes": 21
     },
     {
       "name": "Hera",
@@ -88,7 +96,8 @@
       "father": "Cronus",
       "mother": "Rhea",
       "url": "https://greektraveltellers.com/images/Blog/Greek%20Gods/Greek-Goddess-Hera.jpg",
-      "id": 9
+      "id": 9,
+      "likes": 29
     },
     {
       "name": "Hermes",
@@ -98,7 +107,8 @@
       "father": "Zeus",
       "mother": "Maia",
       "url": "https://artuk.org/download/hermes-herse-and-aglauros-5683",
-      "id": 10
+      "id": 10,
+      "likes": 18
     },
     {
       "name": "Poseidon",
@@ -108,7 +118,8 @@
       "father": "Cronus",
       "mother": "Rhea",
       "url": "https://greektraveltellers.com/images/Blog/Greek%20Gods/Greek-God-Poseidon.jpg",
-      "id": 11
+      "id": 11,
+      "likes": 34
     },
     {
       "name": "Zeus",
@@ -118,7 +129,8 @@
       "father": "Cronus",
       "mother": "Rhea",
       "url": "https://greektraveltellers.com/images/Blog/Greek%20Gods/Greek-God-Zeus.jpg",
-      "id": 12
+      "id": 12,
+      "likes": 38
     },
     {
       "name": "Asclepius",
@@ -128,7 +140,8 @@
       "father": "Apollo",
       "mother": "Coronis",
       "url": "https://eclecticlightdotcom.files.wordpress.com/2016/10/tognollifindingaesculapius.jpg",
-      "id": 13
+      "id": 13,
+      "likes": 2
     }
   ]
 }

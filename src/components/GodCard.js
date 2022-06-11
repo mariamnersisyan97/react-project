@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 function GodCard({ god, handleDelete }) {
-  const { name, power, symbol, father, mother, url } = god;
-  const [count, setCount] = useState(0);
+  const { name, power, symbol, father, mother, url, likes } = god;
+  const [count, setCount] = useState(likes);
 
   const incrementLikes = () => {
     let newCount = count + 1;
@@ -20,7 +20,10 @@ function GodCard({ god, handleDelete }) {
         <br />
         Father: {father}
       </p>
-      <button onClick={incrementLikes}>❤️ Likes: {count}</button>
+      <button onClick={incrementLikes}>
+        ❤️ Likes:
+        {count}
+      </button>
       <button onClick={handleDelete}> 🗑️ </button>
     </li>
   );
