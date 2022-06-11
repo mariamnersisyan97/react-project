@@ -1,22 +1,36 @@
 import React, { useState, useEffect } from "react";
-
 import GodCard from "./GodCard";
 import Form from "./Form";
+import Search from "./Search";
 
-function GodsPage() {
-  const baseURL = ` http://localhost:3004/gods`;
-  const [gods, setGods] = useState([]);
+function GodsPage({ gods, setGods, handleSearch, search }) {
+  // const baseURL = ` http://localhost:3004/gods`;
+  // const [gods, setGods] = useState([]);
 
-  useEffect(() => {
-    fetch(baseURL)
-      .then((r) => r.json())
-      .then(setGods);
-  }, []);
-  const renderGods = gods.map((god) => <GodCard god={god} key={god.id} />);
+  // const [search, setSearch] = useState("");
+  // function handleSearch(newSearch) {
+  //   setSearch(newSearch);
+  //   console.log("1");
+  // }
+
+  // useEffect(() => {
+  //   fetch(baseURL)
+  //     .then((r) => r.json())
+  //     .then(setGods);
+  // }, []);
+
+  const handleDelete = () => {
+    console.log("deleted");
+  };
+  const renderGods = gods.map((god) => (
+    <GodCard handleDelete={handleDelete} god={god} key={god.id} />
+  ));
   //move gods up
+
   return (
     <div>
-      <Form gods={gods} setGods={setGods} />
+      <Form gods={gods} setGods={setGods} search={search} />
+      <Search onSearch={handleSearch} />
       <ul className="cards">{renderGods}</ul>
     </div>
   );
