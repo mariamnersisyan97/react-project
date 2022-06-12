@@ -15,17 +15,17 @@ function App() {
     setSearch(newSearch);
     console.log("1");
   }
-  function handleDeleteListing(id) {
-    const updatedGodsArray = gods.filter((god) => god.id !== id);
-    setGods(updatedGodsArray);
-    console.log("delete");
-    const deleteMethod = {
-      method: "DELETE",
-    };
-    fetch(`http://localhost:3004/gods${id}`, deleteMethod);
+  // function handleDeleteListing(id) {
+  //   const updatedGodsArray = gods.filter((god) => god.id !== id);
+  //   setGods(updatedGodsArray);
+  //   console.log("delete");
+  //   const deleteMethod = {
+  //     method: "DELETE",
+  //   };
+  //   fetch(`http://localhost:3004/gods${id}`, deleteMethod);
 
-    // excludes only the one with the id we are passing in from returned array
-  }
+  //   // excludes only the one with the id we are passing in from returned array
+  // }
 
   useEffect(() => {
     fetch(baseURL)
@@ -48,7 +48,7 @@ function App() {
               setGods={setGods}
               handleSearch={handleSearch}
               search={search}
-              handleDeleteListing={handleDeleteListing}
+              // handleDeleteListing={handleDeleteListing}
             />
           }
         />
