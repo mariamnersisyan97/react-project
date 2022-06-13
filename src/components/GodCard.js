@@ -6,13 +6,17 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
-function GodCard({ god, handleDeleteListing }) {
+function GodCard({ god, handleDeleteGod }) {
   const { name, power, symbol, father, mother, url, likes } = god;
   const [count, setCount] = useState(likes);
 
   const incrementLikes = () => {
     let newCount = count + 1;
     setCount(newCount);
+  };
+
+  const onClickDelete = () => {
+    handleDeleteGod(god.id);
   };
 
   return (
@@ -45,10 +49,12 @@ function GodCard({ god, handleDeleteListing }) {
         <Typography>Father: {god.father}</Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" color="primary">
+        <Button variant="contained" onClick={onClickDelete}>
           🗑️ Delete
         </Button>
-        <Button size="small">❤️ Heart</Button>
+        <Button variant="contained" onClick={incrementLikes}>
+          ❤️ Likes: {count}
+        </Button>
       </CardActions>
     </Card>
   );

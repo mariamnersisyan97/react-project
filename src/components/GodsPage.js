@@ -8,22 +8,23 @@ function GodsPage({
   setGods,
   handleSearch,
   search,
-  handleDeleteListing,
+
   baseURL,
 }) {
-  function handleDeleteListing(id) {
+  const handleDeleteGod = async (id) => {
     const updatedGodsArray = gods.filter((god) => god.id !== id);
     setGods(updatedGodsArray);
     console.log("delete");
     const deleteMethod = {
       method: "DELETE",
     };
-    fetch(baseURL + `/${id}`, deleteMethod);
+    await fetch(baseURL + `/${id}`, deleteMethod);
 
     // excludes only the one with the id we are passing in from returned array
-  }
+  };
+
   const renderGods = gods.map((god) => (
-    <GodCard handleDeleteListing={handleDeleteListing} god={god} key={god.id} />
+    <GodCard handleDeleteGod={handleDeleteGod} god={god} key={god.id} />
   ));
 
   //move gods up
