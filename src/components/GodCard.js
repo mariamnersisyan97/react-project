@@ -37,16 +37,15 @@ function GodCard({ god, handleDeleteGod }) {
     //   <button onClick={handleDeleteListing}> 🗑️ </button>
     // </li>
     <Card sx={{ maxWidth: 345 }}>
-      <CardMedia component="img" alt={god.name} height="140" image={god.url} />
+      <CardMedia component="img" alt={name} height="140" image={url} />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          {god.name}
+          {name}
         </Typography>
-        <Typography variant="body2" color="white">
-          Power: {god.power}
-        </Typography>
-        <Typography>Mother: {god.mother}</Typography>
-        <Typography>Father: {god.father}</Typography>
+        <Typography variant="body2">Power: {power}</Typography>
+        <Typography>Mother: {mother}</Typography>
+        <Typography>Father: {father}</Typography>
+        <Typography>Symbol: {symbol}</Typography>
       </CardContent>
       <CardActions>
         <Button variant="contained" onClick={onClickDelete}>

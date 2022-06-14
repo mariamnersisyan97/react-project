@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import GodCard from "./GodCard";
 import Form from "./Form";
 import Search from "./Search";
@@ -32,7 +32,7 @@ function GodsPage({
   return (
     <div>
       <Form gods={gods} setGods={setGods} search={search} />
-      <Search onSearch={handleSearch} />
+      <Search handleSearch={handleSearch} />
       <ul className="cards">{renderGods}</ul>
     </div>
   );
