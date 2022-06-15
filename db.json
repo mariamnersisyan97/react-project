@@ -23,17 +23,6 @@
       "likes": 16
     },
     {
-      "name": "Ares",
-      "romanname": "Mars",
-      "power": "War, courage, battlelust",
-      "symbol": "Helm",
-      "father": "Zeus",
-      "mother": "Hera",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/The_Combat_of_Ares_and_Athena.jpg/625px-The_Combat_of_Ares_and_Athena.jpg",
-      "id": 3,
-      "likes": 24
-    },
-    {
       "name": "Artemis",
       "romanname": "Diana",
       "power": "Hunting, wild animals, children",
@@ -142,6 +131,13 @@
       "url": "https://eclecticlightdotcom.files.wordpress.com/2016/10/tognollifindingaesculapius.jpg",
       "id": 13,
       "likes": 2
+    },
+    {
+      "name": "Name",
+      "power": "Power",
+      "url": "data:image/jpeg;base64,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",
+      "likes": 0,
+      "id": 14
     }
   ]
 }

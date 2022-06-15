@@ -3,14 +3,8 @@ import GodCard from "./GodCard";
 import Form from "./Form";
 import Search from "./Search";
 
-function GodsPage({
-  gods,
-  setGods,
-  handleSearch,
-  search,
-
-  baseURL,
-}) {
+function GodsPage({ gods, setGods, handleSearch, search }) {
+  const baseURL = ` http://localhost:3004/gods`;
   const handleDeleteGod = async (id) => {
     const updatedGodsArray = gods.filter((god) => god.id !== id);
     setGods(updatedGodsArray);
