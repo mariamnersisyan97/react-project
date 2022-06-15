@@ -37,7 +37,6 @@ function App() {
               setGods={setGods}
               handleSearch={handleSearch}
               search={search}
-              // handleDeleteListing={handleDeleteListing}
             />
           }
         />

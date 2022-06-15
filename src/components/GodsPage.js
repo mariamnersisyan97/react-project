@@ -27,8 +27,6 @@ function GodsPage({
     <GodCard handleDeleteGod={handleDeleteGod} god={god} key={god.id} />
   ));
 
-  //move gods up
-
   return (
     <div>
       <Form gods={gods} setGods={setGods} search={search} />

@@ -66,5 +66,4 @@ function Form({ gods, setGods }) {
     </div>
   );
 }
-// need state to make this a controlled form. Need a value to set it to the state.
 export default Form;

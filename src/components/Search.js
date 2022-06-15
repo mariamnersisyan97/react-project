@@ -5,6 +5,7 @@ function Search({ handleSearch, gods, search }) {
   function handleSubmit(e) {
     e.preventDefault();
     handleSearch(input);
+    console.log("submit");
   }
   // const filteredGods = gods.filter((god) => {
   //   return god.name.toLowerCase().includes(search.toLowerCase());
