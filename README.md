@@ -1,4 +1,4 @@
-MYTHOS App
+<!-- MYTHOS App
 This app was made with mythology lovers in mind!
 
 Features:
@@ -19,7 +19,7 @@ Like a God by pressing the Like button & watch the like counter increment
 ![Gif 3](gif3.gif)
 
 Delete a God by pressing the Delete button. Navigate to the About page to see some mytho info!
-![Gif 4](gif4.gif)
+![Gif 4](gif4.gif) -->
 
 Additional Data:
 {
