@@ -11,6 +11,7 @@ function Navbar() {
     margin: "8px 8px 7px",
     textDecoration: "none",
   });
+
   return (
     <div className="navbar">
       <h1>

@@ -7,6 +7,9 @@ function Form({ gods, setGods }) {
     name: "",
     power: "",
     url: "",
+    mother: "",
+    father: "",
+    symbol: "",
     likes: 0,
   });
 
@@ -33,7 +36,6 @@ function Form({ gods, setGods }) {
         const newGods = [...gods, data];
         setGods(newGods);
       })
-      //  setGod((gods) => [...gods, data]))
       .catch((error) => console.error("Unable to get gods.", error));
   };
   return (
@@ -59,6 +61,27 @@ function Form({ gods, setGods }) {
           type="text"
           name="url"
           placeholder="Image URL"
+          onChange={handleChange}
+        />
+        <input
+          value={god.mother}
+          type="text"
+          name="mother"
+          placeholder="Mother"
+          onChange={handleChange}
+        />
+        <input
+          value={god.father}
+          type="text"
+          name="father"
+          placeholder="Father"
+          onChange={handleChange}
+        />
+        <input
+          value={god.symbol}
+          type="text"
+          name="symbol"
+          placeholder="Symbol"
           onChange={handleChange}
         />
         <button type="submit">Add God</button>

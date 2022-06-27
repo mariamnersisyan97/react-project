@@ -11,16 +11,26 @@ function App() {
   const [gods, setGods] = useState([]);
 
   const [search, setSearch] = useState("");
-  function handleSearch(newSearch) {
-    setSearch(newSearch);
-    console.log("1");
-  }
 
   useEffect(() => {
     fetch(baseURL)
       .then((r) => r.json())
       .then(setGods);
   }, []);
+
+  const filteredGods = gods.filter((god) => {
+    god.name.toLowerCase().includes(search) ||
+      god.power.toLowerCase().includes(search);
+    return god;
+  });
+
+  const renderFilteredGods = filteredGods.filter((god) => {
+    if (god !== "") {
+      return filteredGods;
+    } else {
+      return gods;
+    }
+  });
 
   return (
     <div className="app">
@@ -33,10 +43,11 @@ function App() {
           path="/gods"
           element={
             <GodsPage
+              renderFilteredGods={renderFilteredGods}
               gods={gods}
               setGods={setGods}
-              handleSearch={handleSearch}
               search={search}
+              setSearch={setSearch}
             />
           }
         />

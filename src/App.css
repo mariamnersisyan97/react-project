@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+/* .App.dark {
+  --background: rgb(50, 50, 50);
+  --background--light: rgb(80, 80, 80);
+} */
+.about-block {
+  color: red;
+}

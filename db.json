@@ -111,15 +111,59 @@
       "likes": 34
     },
     {
-      "name": "Zeus",
-      "romanname": "Jupiter",
-      "power": "Sky, weather, kings, fate",
-      "symbol": "Lightning bolt, eagle, bull",
+      "name": "Eileithyia",
+      "romanname": "Lucina",
+      "power": "Childbirth",
+      "symbol": "Torch",
+      "father": "Zeus",
+      "mother": "Hera",
+      "url": "https://www.timelessmyths.com/wp-content/uploads/2020/01/eos.jpg",
+      "id": 12,
+      "likes": 1
+    },
+    {
+      "name": "Eros",
+      "romanname": "Cupid, Amor",
+      "power": "Love, sexual desire",
+      "symbol": "Bow",
+      "father": "arrow",
+      "mother": "Aphrodite",
+      "url": "https://i.etsystatic.com/16496201/r/il/510c7f/3755512194/il_1588xN.3755512194_k4t9.jpg",
+      "id": 13,
+      "likes": 14
+    },
+    {
+      "name": "Hebe",
+      "romanname": "Juventas",
+      "power": "Youth, brides",
+      "symbol": "Cup, pitcher",
+      "father": "Zeus",
+      "mother": "Hera",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Jacques_Louis_Dubois_-_Hebe.jpg/586px-Jacques_Louis_Dubois_-_Hebe.jpg",
+      "id": 14,
+      "likes": 4
+    },
+    {
+      "name": "Hestia",
+      "romanname": "Vesta",
+      "power": "Hearth, home",
+      "symbol": "Kettle",
       "father": "Cronus",
       "mother": "Rhea",
-      "url": "https://greektraveltellers.com/images/Blog/Greek%20Gods/Greek-God-Zeus.jpg",
-      "id": 12,
-      "likes": 38
+      "url": "https://greektraveltellers.com/images/Blog/Greek%20Gods/Greek-Goddess-Hestia.jpg",
+      "id": 15,
+      "likes": 67
+    },
+    {
+      "name": "Horae",
+      "romanname": "Dike, Eunomia, Irene",
+      "power": "The seasons, natural order",
+      "symbol": "Fruit",
+      "father": "Zeus",
+      "mother": "Themis",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Horae_Serenae_-_Edward_John_Poynter.jpg",
+      "id": 16,
+      "likes": 9
     }
   ]
 }

@@ -20,22 +20,6 @@ function GodCard({ god, handleDeleteGod }) {
   };
 
   return (
-    // <li className="god-card">
-    //   <h4>{god.name}</h4>
-    //   <img src={url} alt={name} />
-    //   <p>Power: {power}</p>
-    //   <p>Symbol: {symbol}</p>
-    //   <p>
-    //     Mother: {mother}
-    //     <br />
-    //     Father: {father}
-    //   </p>
-    //   <button onClick={incrementLikes}>
-    //     ❤️ Likes:
-    //     {count}
-    //   </button>
-    //   <button onClick={handleDeleteListing}> 🗑️ </button>
-    // </li>
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia component="img" alt={name} height="140" image={url} />
       <CardContent>
